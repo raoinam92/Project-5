@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+.container{
+	width: 100%;
+	height: auto;
+	position: relative;
+	border: 1px solid black;
+}
+.nav{
+	width: 100%;
+	height: 20vh;
+	text-transform: uppercase;
+}
+.nav h1{
+	position: relative;
+	text-align: center;
+	margin: 2% 0%;
+	font-size: 45px;
+	animation-name: guten;
+	animation-duration: 3s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	transition-property: all;
+	transition-duration: 3s;
+	opacity: 0;
+}
+@keyframes guten
+{
+	from{top: -300px;}
+	to{top: 20px; opacity: 1;}
+}
+.nav ul{
+	position: relative;
+	width: 54%;
+	left: 20%;
+	top: 10%;
+	animation-name: nav-bar;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	transition-property: all;
+	transition-duration: 3s;
+}
+@keyframes nav-bar
+{
+	from{top: -300px;}
+	to{top: 0px;}
+
+}
+.nav ul li{
+	float: left;
+	margin-left: 7%;
+	font-size: 22px;
+}
+.clear{
+	clear: both;
+}
+.nav ul li:hover{
+	transform: scale(1.5);
+	transition-duration: 2s;
+}
+.foodimg{
+	position: relative;
+	width: 50%;
+	height: 60vh;
+	margin-top: 10vh;
+	background-image: url('./images/2.jpg');
+	background-size: 100% 100%;
+	border: none;
+	animation-name: food-img-ani;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	transition-property: all;
+	transition-duration: 3s;
+}
+@keyframes food-img-ani
+{
+	from{left: -600px;}
+	to{left: 0px;}
+}
+.foodimg:hover{
+	transform: scale(0.9);
+	transition-duration: 3s;
+}
+.food-order{
+	width: 50%;
+	height: 60vh;
+	position: absolute;
+	top: 34vh;
+	right: 0;
+	text-align: center;
+}
+.food-order h1{
+	text-transform: uppercase;
+	font-size: 50px;
+	margin: 4% auto;
+	position: relative;
+	animation-name: heading;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	transition-property: all;
+	opacity: 0;
+}
+@keyframes heading
+{
+	from{right: -600px;}
+	to{right: 0px; opacity: 1;}
+}
+.food-order p{
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 70%;
+	font-size: 18px;
+	color: #323232;
+	margin: 5% auto;
+	position: relative;
+	animation-name: para;
+	animation-duration: 2s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	transition-property: all;
+	opacity: 0;
+	transition-duration: 2s;
+}
+@keyframes para
+{
+	from{right: -600px;}
+	to{right: 0px; opacity: 1;}
+}
+.food-order button{
+	width: 20%;
+	height: 10%;
+	border-radius: 20%;
+	border:none;
+	outline-style: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	background-image: linear-gradient(to left, teal, transparent);
+}
+.food-order button:hover{
+	cursor: pointer;
+	background-image: linear-gradient(to right, teal, transparent);
+	color: whitesmoke;
+	box-shadow: 5px -5px 2px 3px black;
+}
+.food-order:hover{
+	transform: scale(0.9);
+	transition-duration: 3s;
+}
+.products{
+	position: relative;
+	height: 120vh;
+}
+.products h1{
+	text-align: center;
+	margin: 6% 0%;
+	font-size: 45px;
+	text-transform: uppercase;
+}
+.c1{
+	height: 225px;
+	width: 225px;
+	transition: 2s;
+	float: left;
+	margin-left: 70px;
+	margin-bottom: 7%;
+	border-radius: 20%;
+}
+.c1:nth-child(2){
+	background-image: url('./images/3.jpg');
+	background-size: 100% 100%;
+	transform: rotate(-10deg);
+}
+.c1:nth-child(3){
+	background-image: url('./images/4.jpg');
+	background-size: 100% 100%;
+	transform: rotate(10deg);
+}
+.c1:nth-child(4){
+	background-image: url('./images/5.jpg');
+	background-size: 100% 100%;
+	transform: rotate(-10deg);
+}
+.c1:nth-child(5){
+	background-image: url('./images/6.jpg');
+	background-size: 100% 100%;
+	transform: rotate(10deg);
+}
+.c1:nth-child(6){
+	background-image: url('./images/7.jpg');
+	background-size: 100% 100%;
+	transform: rotate(-10deg);
+}
+.c1:nth-child(7){
+	background-image: url('./images/8.jpg');
+	background-size: 100% 100%;
+	transform: rotate(10deg);
+}
+.c1:nth-child(8){
+	background-image: url('./images/2.jpg');
+	background-size: 100% 100%;
+	transform: rotate(-10deg);
+}
+.c1:nth-child(9){
+	background-image: url('./images/3.jpg');
+	background-size: 100% 100%;
+	transform: rotate(10deg);
+}
+.c1:hover{
+	box-shadow: 5px -5px 22px 3px black;
+	transform: rotate(0deg);
+	transform: scale(1.2);
+	transition-duration: 2s;
+}
+.c2:hover{
+	box-shadow: 5px -5px 22px 3px grey;
+	transform: rotate(0deg);
+	transform: scale(.9);
+	transition-duration: 2s;
+}
+.portfolio{
+	position: relative;
+	height: 80vh;
+}
+.chef{
+	border: 2px solid black;
+    width: 30%;
+    height: 60vh;
+    display: inline-block;
+    margin-left: 2%;
+}
+.portfolio img{
+	width: 100%;
+}
+.portfolio h1 {
+    text-align: center;
+}
+.chef:hover{
+	transform: rotate(10deg);
+	transition-duration: 3s;
+	box-shadow: 5px -5px 22px 3px grey;
+}
+.portfolio img:hover{
+	width: 100%;
+	transform: scale(.9);
+	transition-duration: 2s;
+}
